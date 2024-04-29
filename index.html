@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>에콰도르 키토</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+	<link rel="stylesheet" href="common.css" crossorigin="anonymous">
+</head>
+
+<body>
+
+<script src="tour.js"></script>
+
+<div id="pano" style="width:100%;height:100%;">
+	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+	<script>
+		embedpano({swf:"tour.swf", xml:"tour.xml", target:"pano", html5:"auto", mobilescale:1.0, passQueryParameters:"startscene,startlookat"});
+	</script>
+</div>
+
+<h5 class="modal-title" style="display: block;position: fixed; top: 0;margin: 20px; font-size: 30px;">에콰도르 키토 </h5>
+
+<!-- modal -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog" >
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+				<h2>에콰도르 키토 </h2>  
+키토는 에콰도르의 수도이다. 적도 가까이에 있지만 안데스산맥 중턱(해발 고도 약 2,850m)에 위치하여 연중 서늘한 고산 기후가 나타난다. 이러한 키토는 저지대의 열대 기후 지역보다 인간이 생활하기에 적합하여 일찍부터 도시가 발달하였으며, 고대 도시의 모습을 잘 보존하고 있어 유네스코 세계 문화유산에 등재되었다.
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script> 
+	function krpano_onready_callback(krpano_interface)
+	{
+		krpano = krpano_interface;
+	}
+    
+	function modalclick(id){
+		// console.log(id);
+		var $modal = $('#'+id) ;
+        $modal.modal('show') ;  
+	}   
+</script>
+
+</body>
+</html>
