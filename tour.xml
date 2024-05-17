@@ -35,8 +35,8 @@
 			<cube url="panos/01704584_Inicio_El_Trebol.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,640,1152,2304,4736" />
 		</image>
 		
-		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="1.128" atv="3.186" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
-		<hotspot name="text" style="custom_hotspotext"  html="에콰도르 키토 " ath="1.128" atv="-1.000" distorted="false" zoom="false" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />		
+		<hotspot type="image" name="spot3" url="skin/vtourskin_hotspot_point.png" style="skin_hotspotstyle" ath="1.128" atv="3.186" distorted="false" zoom="true" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
+		<hotspot name="text" style="custom_hotspotext"  html="에콰도르 키토 " ath="1.128" atv="-1.000" distorted="false" zoom="true" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />		
 
 
 	</scene>
